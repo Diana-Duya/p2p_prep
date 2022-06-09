@@ -8,7 +8,15 @@ function reverseArr(input) {
     return ret;
 }
 
+function getAverage(numbers) {
+    const sum = numbers.reduce((a,b) => a + b,0);
+
+    return sum/numbers.length;
+}
+
 console.log(reverseArr(myArray))
+
+console.log(getAverage([2,2,2]));
 
 
 
